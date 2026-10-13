@@ -41,5 +41,9 @@ Resource: The Minimum Elements For a Software Bill of Materials (SBOM) -
 https://www.ntia.gov/sites/default/files/publications/sbom_minimum_elements_report_0.pdf
 
 ## Misconception in My Track
+A common misconception in networking is that RPKI makes BGP completely secure. However, this is not true. RPKI helps verify whether a network is authorized to announce a specific IP prefix, but it does not check the entire path that internet traffic follows. Therefore, some routing attacks can still occur even when RPKI is used. Network operators need additional security measures, such as route filtering and network monitoring, to reduce these risks. RFC 6811 explains the limitations of BGP prefix origin validation in its Security Considerations section.
+
+Resource: RFC 6811 - BGP Prefix Origin Validation - https://www.rfc-editor.org/info/rfc6811/
 
 ## Open Question
+How can a national service provider combine RPKI validation, continuous route monitoring, and incident response to detect and limit the impact of a BGP hijacking event?
