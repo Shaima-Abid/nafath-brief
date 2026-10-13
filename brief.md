@@ -23,9 +23,22 @@ Resource: OWASP - Mobile Application Security Verification Standard (MASVS) - ht
 
 ## Networking
 
+BGP route hijacking occurs when a network announces incorrect or unauthorized routes, potentially directing internet traffic through an unintended network. Resource Public Key Infrastructure (RPKI) helps reduce this risk by allowing operators to verify whether an autonomous system is authorized to announce an IP prefix using Route Origin Authorizations (ROAs). However, RPKI origin validation does not verify every network along the route or prevent all interception attacks. Additional routing security measures are still necessary.
+
+Resource: RFC 6811 - BGP Prefix Origin Validation - https://www.rfc-editor.org/info/rfc6811/
+
 ## Cybersecurity
 
+Log4Shell (CVE-2021-44228) was a critical remote code execution vulnerability in Apache Log4j 2, a widely used Java logging library. Attackers could exploit vulnerable configurations by sending crafted input that triggered JNDI lookups, potentially allowing arbitrary code execution. The vulnerability affected specific Log4j versions and received a maximum CVSS 3.x severity score of 10.0. Organisations should identify affected applications and upgrade to an appropriate fixed version.
+
+Resource: NIST National Vulnerability Database — CVE-2021-44228 — https://nvd.nist.gov/vuln/detail/CVE-2021-44228
+
 ## Data
+
+A Software Bill of Materials (SBOM) is a formal inventory detailing components, libraries, and supply chain relationships used in building software. According to NTIA guidelines, its minimum data fields must contain: Supplier Name, Component Name, Version, Other Unique Identifiers (such as CPE or PURL), Dependency Relationship, Author of SBOM Data, and Timestamp. These elements enable organizations to track components, manage licenses, and quickly identify and mitigate vulnerabilities across the software supply chain. 
+
+Resource: The Minimum Elements For a Software Bill of Materials (SBOM) - 
+https://www.ntia.gov/sites/default/files/publications/sbom_minimum_elements_report_0.pdf
 
 ## Misconception in My Track
 
